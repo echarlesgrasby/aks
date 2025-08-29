@@ -8,6 +8,7 @@ This method is especially useful for texts composed in languages
 that do not feature orthographic spacing between individual
 words.
 
+---
 ## Usage
 
 ./aks [language] [maximum n value] [source directory]
