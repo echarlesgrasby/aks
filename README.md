@@ -8,13 +8,14 @@ This method is especially useful for texts composed in languages
 that do not feature orthographic spacing between individual
 words.
 
-usage:
+## Usage
 
 ./aks [language] [maximum n value] [source directory]
 
 ./processmasters [maximum n value] [source directory]
 
-examples:
+---
+## Examples
 
 aks tibetan_roman 32 /home/handyc/texts
 
@@ -24,7 +25,20 @@ aks chinese 32 /home/handyc/texts
 
 aks sanskrit_unicode 32 /home/handyc/texts
 
-You may need to change permissions on the scripts in order to allow yourself
-to run them.
 
+> [!TIP]
+> You can also utilize the included Makefile to compile and run the program (along with providing the necessary runtime parameters)
+
+```
+make
+make run "tibetan_roman 32 /home/handyc/texts" && make process "32 /home/handyc/texts" 
+```
+
+
+---
+> [!IMPORTANT]
+> You may need to change permissions on the scripts in order to allow yourself
+> to run them.
+
+---
 The best way to reach me currently is through my SDF email account.
