@@ -23,21 +23,3 @@ jobs:
         with:
           name: aks
           path: ./aks
-
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: aks
-          path: .
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: ./aks
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
